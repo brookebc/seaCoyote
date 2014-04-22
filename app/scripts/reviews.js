@@ -1,3 +1,5 @@
+function Section(){}
+
 
 function Review(name, comment) {
 			this.name = name;
@@ -5,24 +7,42 @@ function Review(name, comment) {
 			
 }
 
-Review.prototype.generateReview = function(data){
-	var markup = "";
+
+Section.prototype.generateReview = function(data){
 	var i;
+	var markup = "";
+	this.data = data;
 
-	for(i=0; i < this.data.length; i++) {
-		markup += "<h3>" + this.data[i].name + "</h3>" +"<li>" + this.data[i].comment + "</li>" 
+	for(i=0; i < data.length; i++) {
+		markup += "<h3>" + data[i].name + "</h3><li>" + data[i].comment + "</li>";
 	}
-
+	console.log(markup);
 	return markup;
 };
 
-var bob = new Review("Bob", "this is a great kayak!");
-var jim = new Review("Jim", "don\'t buy this one!");
+var reviews = new Section();
+
+var bob = new Review("Bob", "This is a great kayak!");
+var jim = new Review("Jim", "Don\'t buy this one!");
+
+var reviewArray= [bob,jim];
+
+reviews.generateReview(reviewArray);
+
+$(".past-reviews").append(reviews.generateReview(reviewArray));
 
 
-function Comment(){};
 
-function CustReview = new Review(name, comment);
+// var comment = 
+
+
+
+
+
+
+// function Comment(){};
+
+// function CustReview = new Review(name, comment);
 
 
 /*just for functionality...----------------------
