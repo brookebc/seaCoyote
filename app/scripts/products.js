@@ -14,6 +14,8 @@ var spiderMan = new Product("<img src='../img/kayak3.png'>", "Spider-Man", "Red 
 
 var productArray = [puddleJumper, riverMonster, greenGoblin, spiderMan];
 
+
+
 Page.prototype.productTemplate = function(data){
 	var i;
 	var markup = "";
