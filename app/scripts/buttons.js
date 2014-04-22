@@ -3,7 +3,12 @@ $(document).ready(function(){
 
 Page.prototype.buyThis =function($el, data){
 $el.click(function(){
-	console.log(data)
+	var id = this
+	var markup = "";
+	var i;
+	console.log(data);
+
+
 });
 
 }
