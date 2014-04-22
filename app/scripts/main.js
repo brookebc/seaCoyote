@@ -1,9 +1,16 @@
 
-$("#buyNow").click(function(){
+$(document).ready(function(){
+
+
+
+
+
+$(".btn.this[i]").click(function(){
 	event.preventDefault;
 	// var productnprice = Number($(this).val());
 	console.log(i);
-$(".shopping-cart").append("<p>" + productArray[Product].name + productArray[Product].cost +"</p>");
+	var i;
+$(".shopping-cart").text("<p>" + productArray[i].name + productArray[i].cost +"</p>");
 }
 
 
@@ -26,5 +33,5 @@ function newreview(data) {
 var newreviewmarkup = newreview(data)
 $(".new-review").append(newreviewmarkup);
 
-
+});
 
