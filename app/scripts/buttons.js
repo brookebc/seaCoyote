@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
 
 Page.prototype.buyThis =function($el, data){
@@ -9,7 +9,7 @@ $el.click(function(){
 	console.log(data);
 
 
-});
+// });
 
 }
 var cart = new Page();
