@@ -22,7 +22,8 @@ Page.prototype.productTemplate = function(data){
 		data[i].pic + "<ul><li><h4>" + 
 		data[i].name + "</h4></li><li>Color: " + 
 		data[i].color + "</li><li>Price: $" + 
-		data[i].cost + "</li><li><button class = 'btn-lg' id = 'buyNow'>Buy it now!</button></li></ul></div>"
+		data[i].cost + "</li><li><button class = 'btn-lg buyNow' id ='btn" + 
+		[i] + "'>Buy it now!</button></li></ul></div>"
 		
 		console.log(i);
 	}
