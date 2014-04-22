@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
 .browsehappy {
@@ -52,8 +52,6 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    background-image:url('../img/kayak.jpg');
-    background-position: center;
     border-bottom: 1px solid #e5e5e5;
     .btn {
         font-size: 21px;
