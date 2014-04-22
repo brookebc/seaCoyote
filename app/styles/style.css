@@ -1,3 +1,27 @@
 body {
-	background: skyblue;
-}
+  background: skyblue; }
+
+.products {
+  border: 1px solid red; }
+
+.jumbotron {
+  background-image: url("../img/kayak.jpg"); }
+
+.productBox {
+  display: inline-block;
+  border: 1px solid red;
+  list-style: none;
+  width: 200px;
+  height: 300px; }
+  .productBox li {
+    list-style: none; }
+  .productBox img {
+    max-width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    border: 1px solid black; }
+
+#buyNow {
+  color: white;
+  background-color: lightseagreen;
+  border: green; }

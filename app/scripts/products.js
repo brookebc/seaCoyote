@@ -34,3 +34,9 @@ Page.prototype.productTemplate = function(data){
 Page.prototype.sendToDom = function($el, data){
 	$el.append(this.productTemplate(data));
 };
+
+
+
+
+	
+		
