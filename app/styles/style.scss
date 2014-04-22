@@ -6,6 +6,9 @@ body {
 .products {
 	border: 1px solid red;
 }
+.jumbotron {
+	background-image: url('../img/kayak.jpg');
+}
 .productBox {
 	display: inline-block;
 	border: 1px solid red;
@@ -26,4 +29,5 @@ body {
 #buyNow {
 	color: white;
 	background-color: lightseagreen;
+	border: green;
 }

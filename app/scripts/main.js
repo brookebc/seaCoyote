@@ -1,5 +1,5 @@
 
-$(".buyNow").click(function(){
+$("#buyNow").click(function(){
 	event.preventDefault;
 	// var productnprice = Number($(this).val());
 	console.log(i);
