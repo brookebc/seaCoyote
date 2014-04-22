@@ -14,6 +14,7 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/style.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -21,11 +22,6 @@
 
     </head>
     <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
@@ -35,55 +31,43 @@
                 </ul>
                 <h3 class="text-muted">seaCoyote</h3>
             </div>
-
             <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+                <h1>Kayak Shop</h1>
+                <p class="lead">Bring out the sea coyote in you.</p>  
             </div>
-
             <div class="row marketing">
-                <div class="col-lg-8">
-                    <h4>Products</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, </p>
+                <div class="col-lg-8"> 
+                    <div>      
+                    <h4>Shopping Cart</h4>
+                        <p class="shopping-cart">Your shopping cart is empty. Please click on the product buttons to add them to your cart.</p>
+                            <p>product name and product price should replace the line above when you click on the buyit button for each product</p
 
-                <div>
-                <h4>Shopping Cart</h4>
-                    <p>Your shopping cart is empty. Please click on the product buttons to add them to your cart.</p>
-                    <ul></ul>
-                    <p>product name</p>
-                    <p> price </p>
-                    <p> enter your quantity</p>
-                    <p> calculate your total</p>
-                    <p> YOUR TOTAL </p>
-                    <p> button to ship it to me which opens a form to allow people to enter a review</p>
-                   
-                    <a class="btn btn-info" href="#">Calculate total <span class="glyphicon glyphicon-usd"></span></a>
-                    <input type = "text" name = "new-total"><br>
-                </div>
-                <div> 
-                    <div class="alert alert-warning">
+                             <input type = "text" name = "new-total"><br>
+                            <a class="btn btn-info complete-purchase" href="#">Complete purchase <span class="glyphicon glyphicon-usd"></span></a>
+                            <p> button to complete purchase shows the formdiv that people use to enter a review</p>
+                           
+                    </div>       
+                    <div class="alert alert-warning customer-review">
                         <h4>Would you like to complete a product survey</h4>
                         <form name = "product-review">
-                    <p>Please enter your comments here: <input type = "text" name = "comment-part"> <br>
-                    <add their name here>
-                        <add their product name here>
-                            <a class="btn btn-info" href="#">Submit your review <span class="glyphicon glyphicon-pushpin"></span></a>
+                            <p>Please enter your comments here: <input type = "text" name = "comment-part"> <br>
+                            <add their name here>
+                            <add their product name here>
+                            <a class="btn btn-info reviewer" href="#">Submit your review <span class="glyphicon glyphicon-pushpin"></span></a>
                         </form>
-                    <p>this information creates a new variable that will be added to the reviews div when people hit submit.</p>
+                            <p>this information creates a new variable that will be added to the reviews div when people hit submit.</p>
                     </div>
-                
-                
                 </div>
-                </div>
-
+            </div>
+                   <div class="products">
+                        <h4>Products</h4>
+                        
+                    </div>
                 <div class="col-lg-4">
                     <h4>Reviews</h4>
                     <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
                 </div>
-            </div>
-
+                </div>
             <div class="footer">
                 <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
             </div>
@@ -123,7 +107,9 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <script src= "scripts/main.js"></script>
+        <script src = "scripts/products.js"></script>
+        <script src = "scripts/productsdom.js"></script>
         <!-- endbuild -->
 </body>
 </html>
