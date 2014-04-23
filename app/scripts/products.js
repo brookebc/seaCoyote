@@ -13,25 +13,29 @@ var productArray = [
 		pic: "../img/kayak0.png",
 		name: "Puddle-Jumper" ,
 		color: "Red",
-		price: 600
+		price: 600,
+		modal: "m0"
 	},
 	{
 		pic: "../img/kayak1.png" ,
 		name: "River Monster",
 		color: "Yellow" ,
-		price: 400
+		price: 400,
+		modal: "m1"
 	},
 	{
 		pic: "../img/kayak2.png",
 		name: "Green Goblin",
 		color: "Green",
-		price: 700
+		price: 700,
+		modal: "m2"
 	},
 	{
 		pic: "../img/kayak3.png" ,
 		name: "Spider-Man",
 		color: "Red and White",
-		price: 900
+		price: 900,
+		modal: "m3"
 	},
 ];
 
