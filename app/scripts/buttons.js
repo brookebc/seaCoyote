@@ -15,8 +15,8 @@ $(".products").on("click", $el, function(){
 }
 var cart = new Page();
 
-// cart.buyThis($(".buyNow"), "test")
-// });
+cart.buyThis($(".buyNow"), "test")
+});
 
 
 // $(".btn.[i]").click(function(){
