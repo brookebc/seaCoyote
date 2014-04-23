@@ -4,6 +4,7 @@ $(".complete-purchase").click(function(){
 		event.preventDefault;
 	$(".customer-review").removeClass("hide");
 })
+ 
 
 // function createnewreviewrecord(){
 
