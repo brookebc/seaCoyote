@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js">
     <head>
@@ -19,7 +18,15 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <script type="template/html" id="tourshere">
 
+         <% _.each(sctours,function(element,index,list) { %>
+            <h4> <%= element.citytour.city %></h4>
+            <ul class="list-unstyled">
+                <li><%= element.citytour.name %> <p><%= element.citytour.link %></li>
+            </ul>
+        <% }); %>
+        </script>
     </head>
     <body>
         <div class="container">
@@ -27,9 +34,9 @@
 
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <h3 class="text-muted">seaCoyote</h3>
             </div>
@@ -41,7 +48,8 @@
             </div>
             
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 placestotour">
+                <h4>Tours in other cities</h4>
 	<p> this is where we will add the information from the tours that we recommend</p>
                 
                 </div>
@@ -51,6 +59,8 @@
             </div>
 
         </div>
+
+        
 
 
         <!-- build:js scripts/vendor.js -->
@@ -82,16 +92,19 @@
         <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src = "scripts/products.js"></script>
-        <script src = "scripts/productsdom.js"></script>
-        <script src= "scripts/main.js"></script>
-        <script src= "scripts/buttons.js"></script>
+        
+ 
+        <script src= "scripts/datatours.js"></script>
+        <script src= "scripts/tourmaker.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>
+
 
 
 
