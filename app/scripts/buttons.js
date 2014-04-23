@@ -17,7 +17,6 @@ var cart = new Page();
 cart.buyThis($(".buyNow"), "test")
 });
 
-
 $(".btn.[i]").click(function(){
 	event.preventDefault;
 	// var productnprice = Number($(this).val());

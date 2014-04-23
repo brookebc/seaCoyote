@@ -22,8 +22,9 @@ Section.prototype.generateReview = function(data){
 
 var reviews = new Section();
 
-var bob = new Review("Bob", "This is a great kayak!");
-var jim = new Review("Jim", "Don\'t buy this one!");
+var bob = new Review("Bob", "The staff is very knowledgable and friendly! I would definitely buy from them again!");
+var jim = new Review("Jim", "I bought the spiderman model and it is very fast but unstable! Watch out!");
+
 
 var reviewArray= [bob,jim];
 

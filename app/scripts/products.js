@@ -14,7 +14,9 @@ var spiderMan = new Product("<img src='../img/kayak3.png'>", "Spider-Man", "Red 
 
 var productArray = [puddleJumper, riverMonster, greenGoblin, spiderMan];
 
-
+// var prodNames = _.pluck(productArray, "name")
+// // ["Puddle Jumper", "River Monster"]
+// data-cost=cost
 
 Page.prototype.productTemplate = function(data){
 	var i;
@@ -24,7 +26,7 @@ Page.prototype.productTemplate = function(data){
 		data[i].pic + "<ul><li><h4>" + 
 		data[i].name + "</h4></li><li>Color: " + 
 		data[i].color + "</li><li>Price: $" + 
-		data[i].cost + "</li><li><button class = 'btn-lg buyNow' id ='btn" + 
+		data[i].cost + "</li><li><button data-cost='" + data[i].cost + "'class = 'btn-lg buyNow' id ='btn" + 
 		[i] + "'>Buy it now!</button></li></ul></div>"
 		
 		console.log(i);
