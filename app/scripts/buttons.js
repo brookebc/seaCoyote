@@ -3,11 +3,8 @@ $(document).ready(function(){
 
 Page.prototype.buyThis =function($el, data){
 $(".products").on("click", $el, function(){
-
-	var markup = "";
-	var i;
 	console.log(data);
-	$(".shopping-cart").append()
+
 
 
 });
@@ -15,7 +12,7 @@ $(".products").on("click", $el, function(){
 }
 var cart = new Page();
 
-cart.buyThis($(".buyNow"), "test")
+cart.buyThis(this), "test");
 });
 
 
