@@ -7,39 +7,33 @@ function Product(pic, name, color, cost){
 	this.cost = cost;
 }
 
-var puddleJumper = new Product("<img src='../img/kayak0.png'>", "Puddle-Jumper", "Red", 600);
-var riverMonster = new Product("<img src='../img/kayak1.png'>", "River Monster", "Yellow", 400);
-var greenGoblin = new Product("<img src='../img/kayak2.png'>", "Green Goblin", "Green", 700);
-var spiderMan = new Product("<img src='../img/kayak3.png'>", "Spider-Man", "Red and White", 900);
 
-var productArray = [puddleJumper, riverMonster, greenGoblin, spiderMan];
-
-// var prodNames = _.pluck(productArray, "name")
-// // ["Puddle Jumper", "River Monster"]
-// data-cost=cost
-
-Page.prototype.productTemplate = function(data){
-	var i;
-	var markup = "";
-	for(i=0; i<data.length; i=i+1){
-		markup += "<div class = 'productBox'>" + 
-		data[i].pic + "<ul><li><h4>" + 
-		data[i].name + "</h4></li><li>Color: " + 
-		data[i].color + "</li><li>Price: $" + 
-		data[i].cost + "</li><li><button data-cost='" + data[i].cost + "'class = 'btn-lg buyNow' id ='btn" + 
-		[i] + "'>Buy it now!</button></li></ul></div>"
-		
-		console.log(i);
-	}
-	return markup;
-};
-
-
-
-Page.prototype.sendToDom = function($el, data){
-	$el.append(this.productTemplate(data));
-};
-
+var productArray = [
+	{
+		pic: "../img/kayak0.png",
+		name: "Puddle-Jumper" ,
+		color: "Red",
+		price: 600
+	},
+	{
+		pic: "../img/kayak1.png" ,
+		name: "River Monster",
+		color: "Yellow" ,
+		price: 400
+	},
+	{
+		pic: "../img/kayak2.png",
+		name: "Green Goblin",
+		color: "Green",
+		price: 700
+	},
+	{
+		pic: "../img/kayak3.png" ,
+		name: "Spider-Man",
+		color: "Red and White",
+		price: 900
+	},
+];
 
 
 
