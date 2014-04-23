@@ -2,11 +2,12 @@ $(document).ready(function(){
 
 
 Page.prototype.buyThis =function($el, data){
-$el.click(function(){
-	var id = this
+$(".products").on("click", $el, function(){
+
 	var markup = "";
 	var i;
 	console.log(data);
+	$(".shopping-cart").append()
 
 
 });
@@ -14,13 +15,13 @@ $el.click(function(){
 }
 var cart = new Page();
 
-cart.buyThis($(".buyNow"), "test")
-});
+// cart.buyThis($(".buyNow"), "test")
+// });
 
 
-$(".btn.[i]").click(function(){
-	event.preventDefault;
-	// var productnprice = Number($(this).val());
-	console.log(i);
-	var i;
-$(".shopping-cart").text("<p>" + productArray[i].name + productArray[i].cost +"</p>");
+// $(".btn.[i]").click(function(){
+// 	event.preventDefault;
+// 	// var productnprice = Number($(this).val());
+// 	console.log(i);
+// 	var i;
+// $(".shopping-cart").text("<p>" + productArray[i].name + productArray[i].cost +"</p>");
