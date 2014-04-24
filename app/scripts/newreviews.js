@@ -5,8 +5,8 @@ $(".complete-purchase").click(function(){
 	$(".customer-review").removeClass("hide");
 })
  $('.complete-purchase').click(function(){
-      var value = $('#name').val();
-   $('.past-reviews').append('<li>' + value + '</li>'); });
+      var value = $('namepart').val();
+   $('.newreview').append('<li>' + value + '</li>'); });
 
 // function createnewreviewrecord(){
 
