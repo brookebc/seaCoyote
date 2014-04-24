@@ -1,23 +1,28 @@
-// $(document).ready() 
+$(document).ready() 
 
 $(".complete-purchase").click(function(){
 		event.preventDefault;
 	$(".customer-review").removeClass("hide");
 })
+ $('.complete-purchase').click(function(){
+      var value = $('#name').val();
+   $('.past-reviews').append('<li>' + value + '</li>'); });
+
+// function createnewreviewrecord(){
+
+// 	var namepart = productreview.namepart.value;
+// 	var commentpart = productreview.commentpart.value;
+// 	var newreviewmarkup =+ "<h4> + namepart + </h4><li> + commentpart + </li>"
+// 	var readyreview = productreview.newreviewmarkup.value 
+// }
+
+// $(".reviewer").click(function(){
+// 	e.preventDefault;
+// 	$(".pastreviews").append("newreviewmarkup");
+// }
 
 
-$('.submitReview').click(function(){
-      var value = $(namepart).val();
-   $('ul').append('<li>' + value + '</li>'); });
-
-
-
-
-
-
-
-
-
- 
-
+// // $("input:text name").val(function(){
+// // 	return this.defaultValue;
+// // });
 
