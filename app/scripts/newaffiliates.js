@@ -16,7 +16,7 @@
       e.preventDefault();
       var newaffiliatedata = $(this).serializeArray();
        var affiliateformresults = _.pluck(newaffiliatedata, "value");
-      console.log(helloRandom);
+      console.log(affiliateformresults);
     $(".container").append(affiliateformresults);
       
     });
