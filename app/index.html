@@ -26,7 +26,6 @@
             <ul class = "list-unstyled">
                 <li> <%= element.color %></li>
                 <li> price: $<%= element.price %> </li>
-                <li><button class="buyNow btn-lg" data-toggle="modal" data-target="#<%=element.modal%>" >More Info</button>
             </ul></div>
         <% }); %>
 
@@ -68,6 +67,7 @@
                 <div class="products">
                     <h4>Products</h4>
 
+
                 <!-- Modal -->
                         <div class="modal fade" id="m0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
@@ -95,7 +95,9 @@
                             </div>
                           </div>
                         </div>
+
                 </div>
+
 
         
                     <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -194,6 +196,8 @@
 
 
 
+=======
+>>>>>>> bf9661c754659a43e24e9c9f072404d9a464091a
 
                 <div class="row marketing">
                     <div class="col-lg-12 shopping-cart"> 
@@ -213,14 +217,14 @@
                         <h4>Would you like to complete a product survey</h4>
                         <form name = "productreview">
                             <p>Please enter your comments here: <br> 
-                                Name:       <input type ="text" name ="namepart"> <br>
-                                Comment:    <input type = "text" name = "commentpart"> <br>
-                                Product:    <input type = "text" name = "product"> <br>
-                          
-                            
-                            <a class="btn btn-info submitReview" href="#">Submit your review <span class="glyphicon glyphicon-pushpin"></span></a>
+                                Review and Name: <input id ="name" type="text"> <br>
+                                <!-- Comment:    <input id ="comment" type ="text"> <br> -->
+
+                            <!-- <add their name here>
+                            <add their product name here> -->
+                            <a class="btn btn-info complete-purchase">Submit your review <span class="glyphicon glyphicon-pushpin"></span></a>
                         </form>
-                            
+                            <!-- <p>this information creates a new variable that will be added to the reviews div when people hit submit.</p> -->
                     </div>
                 </div>
             </div>
@@ -232,11 +236,10 @@
                 </div>
                 </div>
             <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> By the SeaCoyote Team</p>
+                <p><span class="glyphicon glyphicon-heart"></span> from Sea Coyote team</p>
             </div>
 
         </div>
-
 
 
         <!-- build:js scripts/vendor.js -->
@@ -273,9 +276,15 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->      
         <script src = "scripts/products.js"></script>
+<<<<<<< HEAD
         <script src = "scripts/productTemplate.js"></script>
         <script src = "scripts/register.js"></script>    
+=======
+        <script src = "scripts/productTemplate.js"></script>  
+        <script src = "scripts/productsdom.js"></script>
+>>>>>>> bf9661c754659a43e24e9c9f072404d9a464091a
         <script src= "scripts/main.js"></script>
+        <script src= "scripts/buttons.js"></script>
         <script src= "scripts/reviews.js"></script>
         <script src= "scripts/newreviews.js"></script>
         <!-- endbuild -->
