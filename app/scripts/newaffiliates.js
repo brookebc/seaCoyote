@@ -1,23 +1,19 @@
-  function showValues() {
-    var fields = $( ":input" ).serializeArray();
-    $( "#results" ).empty();
-    jQuery.each( fields, function( i, field ) {
-      $( "#results" ).append( field.value + " " );
-    });
-  }
- 
-  $( ":checkbox, :radio" ).click( showValues );
-  $( "select" ).change( showValues );
-  showValues();
+  
+  var newaffiliatedata;
+  var justVals;
 
-  $(function() {
+  $(function(window) {
   
     $("form").on("submit", function(e) {
       e.preventDefault();
-      var newaffiliatedata = $(this).serializeArray();
-       var affiliateformresults = _.pluck(newaffiliatedata, "value");
-      console.log(affiliateformresults);
-    $(".container").append(affiliateformresults);
-      
+      newaffiliatedata = $(this).serializeArray();
+      // console.log(newaffiliatedata);
+      var justVals = _.pluck(newaffiliatedata, "value");
+      var affiliateTmplString = _.template($("#newAffiliatesTmpl").html(),newaffiliatedata)
+      console.log(affiliateTmplString);
+      // console.log(justVals);
+    $(".newoutfitters").append(justVals);      
     });
 });
+
+
