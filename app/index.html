@@ -59,11 +59,7 @@
                 <h3 class="text-muted"></h3>
             </div>
 
-
-
-            
-
-            <div class="col-lg-8">
+            <div class="col-lg-12">
 
                 <div class="products">
                     <h4>Products</h4>
@@ -94,7 +90,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> <!-- end of this product modal -->
                 </div>
 
         
@@ -123,10 +119,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-
-
-
+                        </div> <!-- end of this product modal -->
 
                     <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -153,12 +146,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-
-
-
-
-
+                        </div> <!-- end of this product modal -->
 
                         <div class="modal fade" id="m3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -184,31 +172,18 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> <!-- end of this product modal -->
                 
-
-
-
-
-
-
-
-
-
                 <div class="row marketing">
                     <div class="col-lg-12 shopping-cart"> 
                     <!-- <div>       -->
                     <h4>Shopping Cart</h4>
                         <p class="hidethis">Your shopping cart is empty. Please click on the product buttons to add them to your cart.</p>
-                        <ul class = "purchased">
-                            
-                        </ul>
-
-
+                            <ul class="purchased"></ul>
                             
                             <a class="btn btn-info complete-purchase" href="#">Complete purchase <span class="glyphicon glyphicon-usd"></span></a>
                            
-                    <!-- </div>  -->      
+                   <!--  </div>   -->     
                     <div class="alert alert-warning customer-review hide">
                         <h4>Would you like to complete a product survey</h4>
                         <form name = "productreview">
@@ -220,19 +195,19 @@
                             
                     </div> <!-- End of the review form  -->  
                 </div> <!-- End of the shopping cart  -->  
-            </div>
+            </div> <!-- End of marketing row  --> 
             </div>
 
-                <div class="col-lg-4 past-reviews">
+                <div class="col-lg-12 past-reviews">
                     <h4>Reviews</h4>
-                    <p></p>
-                    <p class="newreview"><p>
+            
                 </div>
+                   
                 </div>
+                <br>
             <div class="footer">
                 <p><span class="glyphicon glyphicon-heart"></span> By the SeaCoyote Team</p>
             </div>
-
         </div>
 
 
@@ -270,11 +245,11 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->      
-        <script src = "scripts/products.js"></script>
-        <script src = "scripts/productTemplate.js"></script>
-        <script src = "scripts/register.js"></script>    
-        <script src= "scripts/reviews.js"></script>
-        <script src= "scripts/newreviews.js"></script>
+        <script src ="scripts/products.js"></script>
+        <script src ="scripts/productTemplate.js"></script>
+        <script src ="scripts/register.js"></script>    
+        <script src="scripts/reviews.js"></script>
+        <script src="scripts/newreviews.js"></script>
         <!-- endbuild -->
 </body>
 </html>

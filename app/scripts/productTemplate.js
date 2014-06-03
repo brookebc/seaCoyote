@@ -22,11 +22,11 @@ var homePage = {
 		this.initStyling();
 		// this.initEvents();
 		// this.initValidation();
-		console.log("init begins");
+		// console.log("init begins");
 	},
 	initStyling: function() {
 		home.addTmpl($(".products"), $("#productInfo").html(), productArray);
-		console.log("init styling begins")
+		// console.log("init styling begins");
 	}
 
 }

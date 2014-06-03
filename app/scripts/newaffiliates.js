@@ -1,4 +1,3 @@
-  
   var newaffiliatedata;
   var justVals;
 
@@ -6,12 +5,15 @@
   
     $("form").on("submit", function(e) {
       e.preventDefault();
+      // console.log('heard a click');
       newaffiliatedata = $(this).serializeArray();
-      // console.log(newaffiliatedata);
+      console.log(newaffiliatedata);
+
       var justVals = _.pluck(newaffiliatedata, "value");
-      var affiliateTmplString = _.template($("#newAffiliatesTmpl").html(),newaffiliatedata)
-      console.log(affiliateTmplString);
-      // console.log(justVals);
+      console.log(justVals);
+      // var affiliateTmplString = _.template($("#newAffiliatesTmpl").html(),justVals)
+      // console.log(affiliateTmplString);
+      
     $(".newoutfitters").append(justVals);      
     });
 });

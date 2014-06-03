@@ -32,8 +32,8 @@
         <% _.each(justVals, function(element, index, list) {  %>
             <h4> <%= element.value %></h4>
             // <ul class="list-unstyled">
-            //     <li><%= element.value %> </li>
-            //     <li><%= element.value %> </li>
+                // <li><%= element.value %> </li>
+                // <li><%= element.value %> </li>
             // </ul>
         <% }); %>
         </script>
@@ -106,25 +106,28 @@
             </div>
             <h3>Sign up now!</h3>
             <div class"newaffiliatesignups">
-                <form action=“affiliateform”>
+                <form action='affiliateform' class='affilateform'>
                   <div>
-                    <input type="text" name="affiliatename" id="companyname" placeholder="Your Company" />
+                    <input type="text" name="affiliatename" id="companyname" placeholder="Your Company"></input>
                   </div>
                   <div>
-                    <input type="text" name="affiliatecity" id="companycity" placeholder="Your City" />
+                    <input type="text" name="affiliatecity" id="companycity" placeholder="Your City"></input>
                   </div>
                   <div>
-                    <input type="text" name="affiliateurl" id="companyurl" placeholder="Link to your website" />
+                    <input type="text" name="affiliateurl" id="companyurl" placeholder="Link to your website"></input>
                   </div>
                   <div>
                     <p>
                         
                         <input type="submit" name="submit" value="Submit Form" /></p>
                   </div>
+                  <!-- <div>
+                    <button type="button" class="btn btn-primary">Submit New Affiliate</button>
+                    <!-- <a href='#' type="submit" class="btn btn-primary" name="submit">Submit New Affiliate</a> -->
+                  </div> 
                 </form> 
+            </div>
 
-                
-  </div>
 <div class="container"></div>
  
             </div>
@@ -167,12 +170,9 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        
- 
-        <script src= "scripts/datatours.js"></script>
-        <script src= "scripts/tourmaker.js"></script>
-        <script src= "scripts/newaffiliates.js"></script>
-
+        <script src="scripts/datatours.js"></script>
+        <script src="scripts/tourmaker.js"></script>
+        <script src="scripts/newaffiliates.js"></script>
         <!-- endbuild -->
 </body>
 </html>

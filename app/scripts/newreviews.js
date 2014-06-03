@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 });
 
 $('.complete-purchase').click(function(event){
