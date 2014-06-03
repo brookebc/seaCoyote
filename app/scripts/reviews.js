@@ -1,12 +1,9 @@
 function Section(){}
 
-
 function Review(name, comment) {
 			this.name = name;
-			this.comment = comment;
-			
+			this.comment = comment;		
 }
-
 
 Section.prototype.generateReview = function(data){
 	var i;
@@ -16,7 +13,7 @@ Section.prototype.generateReview = function(data){
 	for(i=0; i < data.length; i++) {
 		markup += "<li>" + data[i].comment + "</li>";
 	}
-	console.log(markup);
+	// console.log(markup);
 	return markup;
 };
 

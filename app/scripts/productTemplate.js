@@ -29,5 +29,4 @@ var homePage = {
 		console.log("init styling begins")
 	}
 
-
 }
