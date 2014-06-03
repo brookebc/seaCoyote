@@ -18,24 +18,22 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-        <script type="template/html" id="tourshere">
-
-         <% _.each(sctours,function(element,index,list) { %>
-            <h4> <%= element.citytour.city %></h4>
-            <ul class="list-unstyled">
-                <li><%= element.citytour.name %> <p><%= element.citytour.link %></li>
-            </ul>
-        <% }); %>
+            <script type="template/html" id="tourshere">
+             <% _.each(sctours,function(element,index,list) { %>
+                <h4> <%= element.citytour.city %></h4>
+                <ul class="list-unstyled">
+                    <li><%= element.citytour.name %> <p><%= element.citytour.link %></li>
+                </ul>
+            <% }); %>
         </script>
 
        <script type="template/html" id="newAffiliatesTmpl">
-        <% _.each(justVals, function(element, index, list) {  %>
-            <h4> <%= element.value %></h4>
-            // <ul class="list-unstyled">
-                // <li><%= element.value %> </li>
-                // <li><%= element.value %> </li>
-            // </ul>
-        <% }); %>
+            <% _.each(justVals, function(element, index, list) {  %>
+                <h4> <%= element.value(i) %></h4>
+                <ul class="list-unstyled">
+                    <li><%= element.value(i) %> <p><%= element.value(i) %></li>
+                </ul>
+            <% }); %>
         </script>
 
     </head>
@@ -61,12 +59,12 @@
             </div>
 
             <div class="col-lg-8">
-                <h3>Recommended Tour Outfitters</h3>
-                  <p class="placestotour"></p>
-
-                  <h3>Our featured Outfitters</h3>
-                  <p class="newoutfitters"></p>
-                
+                <div class="placestotour">
+                    <h3>Recommended Tour Outfitters</h3>
+                </div>
+                <div class="newoutfitters">
+                    <h3>Our Newest Outfitters</h3>
+                </div> 
             </div>
             <div class ="col-lg-4 becomeaffiliate">
                 <br>
@@ -96,7 +94,7 @@
 
                                 </ul>
                             <h4>How to get started</h4>
-                            <p>Simply fill out our form and you will be immedialtly approved and added to our site as a recommended tour outfitter. Let's get this party started!</p>
+                            <p>Simply fill out our form and you will be immediately approved and added to our site as a recommended tour outfitter. Let's get this party started!</p>
                             </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Awesome</button>
@@ -104,27 +102,22 @@
                     </div>
                 </div>
             </div>
-            <h3>Sign up now!</h3>
+           
             <div class"newaffiliatesignups">
+                 <h3>Sign up now!</h3>
                 <form action='affiliateform' class='affilateform'>
                   <div>
-                    <input type="text" name="affiliatename" id="companyname" placeholder="Your Company"></input>
+                    <input type="text" name="affiliatecity" id="companycity" placeholder="Your City"></input>
                   </div>
                   <div>
-                    <input type="text" name="affiliatecity" id="companycity" placeholder="Your City"></input>
+                    <input type="text" name="affiliatename" id="companyname" placeholder="Your Company"></input>
                   </div>
                   <div>
                     <input type="text" name="affiliateurl" id="companyurl" placeholder="Link to your website"></input>
                   </div>
                   <div>
-                    <p>
-                        
-                        <input type="submit" name="submit" value="Submit Form" /></p>
+                    <button type="submit" name="submit" value="Submit Form">Add Your Company</button>
                   </div>
-                  <!-- <div>
-                    <button type="button" class="btn btn-primary">Submit New Affiliate</button>
-                    <!-- <a href='#' type="submit" class="btn btn-primary" name="submit">Submit New Affiliate</a> -->
-                  </div> 
                 </form> 
             </div>
 

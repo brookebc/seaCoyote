@@ -36,7 +36,7 @@ var productArray = [
 		color: "Red and White",
 		price: 900,
 		modal: "m3"
-	},
+	}
 ];
 
 
