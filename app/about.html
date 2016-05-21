@@ -28,10 +28,11 @@
         </script>
 
        <script type="template/html" id="newAffiliatesTmpl">
-            <% _.each(justVals, function(element, index, list) {  %>
-                <h4> <%= element.value(i) %></h4>
+            <% _.each(newaffiliatedata, function(element, index, list) {  %>
                 <ul class="list-unstyled">
-                    <li><%= element.value(i) %> <p><%= element.value(i) %></li>
+                    <h4> <%= newaffiliatedata.affiliatecity.value %></h4>
+                    <li><%= newaffiliatedata.affiliatename.value %></li>
+                    <li><%= element.affiliateurl.value %></li>
                 </ul>
             <% }); %>
         </script>
@@ -64,11 +65,12 @@
                 </div>
                 <div class="newoutfitters">
                     <h3>Our Newest Outfitters</h3>
+                    <p class="newoutfitters"></p>
                 </div> 
             </div>
             <div class ="col-lg-4 becomeaffiliate">
                 <br>
-                <br>
+               
                 <h4>Are you a tour outfitter?</h4>
                     <p>Consider joining our affiliate program to leverage our brand with your tour offerings.</p>
                 <!-- Button trigger modal -->
